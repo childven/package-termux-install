@@ -1,3 +1,7 @@
+echo "Your Name ?"
+read -p"=> " name;
+echo "Hi $name
+
 echo "Want Install Package?"
 read -p"y/n : " y;
 
@@ -21,6 +25,7 @@ pkg install python2
 pkg install php
 pkg install fish
 pkg install glib
+pkg install apache2
 clear
 echo "Done!"
 sleep 1
