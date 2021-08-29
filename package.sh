@@ -1,6 +1,5 @@
 echo "Your Name ?"
 read -p"=> " name;
-echo "Hi $name
 
 echo "Want Install Package?"
 read -p"y/n : " y;
@@ -10,22 +9,23 @@ then
 echo "wait.."
 sleep 2
 clear
-pkg update && pkg upgrade
-pkg install git
-pkg install curl
-pkg install libcurl
-pkg install openssh
-pkg install toilet
-pkg install figlet
-pkg install ruby
-gem install lolcat
-pkg install bash
-pkg install python
-pkg install python2
-pkg install php
-pkg install fish
-pkg install glib
-pkg install apache2
+pkg update && pkg upgrade -y
+apt-get update && apt-get upgrade -y
+pkg install git -y
+pkg install curl -y
+pkg install libcurl -y
+pkg install openssh -y
+pkg install toilet -y
+pkg install figlet -y
+pkg install ruby -y
+gem install lolcat -y
+pkg install bash -y
+pkg install python -y
+pkg install python2 -y
+pkg install php -y
+pkg install fish -y
+pkg install glib -y
+pkg install apache2 -y
 clear
 echo "Done!"
 sleep 1
